@@ -294,4 +294,18 @@ export default class EnhancedTextEditor extends TextEditor {
   unordered_list() {
     this.insertAroundCursor('* ', '')
   }
+
+  /**
+   * Insert details.
+   */
+  details() {
+    this.insertAroundCursor('[details=?] ', '[/details]')
+  }
+
+  /**
+   * Insert reply_see.
+   */
+  reply_see() {
+    this.insertAroundCursor('[reply] ', '[/reply]')
+  }
 }
