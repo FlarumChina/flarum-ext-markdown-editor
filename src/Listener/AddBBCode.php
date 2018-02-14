@@ -21,10 +21,10 @@ class AddBBCode
      */
     public function addBBCode(ConfigureFormatter $event)
     {
-        // $event->configurator->BBCodes->addFromRepository('SPOILER');
+        // $event->configurator->BBCodes->addFromRepository('RIGHT');
         $event->configurator->BBCodes->addCustom(
-            '[SPOILER]{TEXT}[/SPOILER]',
-            '<div class="spoiler">{TEXT}</div>'
+            '[RIGHT]{TEXT}[/RIGHT]',
+            '<div style="text-align:right">{TEXT}</div>'
         );
     }
 }
